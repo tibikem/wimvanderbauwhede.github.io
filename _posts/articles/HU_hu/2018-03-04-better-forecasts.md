@@ -1,11 +1,11 @@
 ---
 layout: article
-title: "Imagine we had better weather forecasts"
+title: "Képzeljük el, ha jobbak lennének az időjárás-előrejelzéseink"
 date: 2018-03-04
 modified: 2018-03-04
-tags: [ weather, accelerators, supercomputing ]
-excerpt: "Current weather forecasts are at the same time very advanced and yet not good enough. Earlier and more accurate warnings could help to limit the damage of such events."
-current: "Imagine we had better weather forecasts"
+tags: [ időjárás, gyorsítók, szuperszámítás ]
+excerpt: "Jelenlegi időjárás-előrejelzéseink egyidőben nagyon fejlettek és mégsem elég jók. Korábbi és pontosabb figyelmeztetések korlátozhatják hasonló események kárát."
+current: "Képzeljük el, ha jobbak lennének az időjárás-előrejelzéseink"
 current_image: better-forecasts_1600x600.jpg
 comments: false
 toc: false
@@ -16,27 +16,27 @@ image:
   thumb: better-forecasts_400x150.jpg
 ---
 
-The last few days have shown that current weather forecasts are at the same time very advanced and yet not good enough. We had little warning of the very large amount of snow that would cripple our infrastructure. Earlier and more accurate warnings could help to limit the damage of such events (estimated at £470m a day just from the travel disruption). Also, better long-range predictions about the probabilities of such events in the future could help with investment and planning of infrastructure and services: should councils invest in more snow ploughs; should rail operators invest in making the network more resilient to extreme cold weather; how can the emergency services be kept running in such extreme conditions, etc.?
+Az elmúlt napok megmutatták, hogy a jelenlegi időjárás-előrejelzéseink egyidőben nagyon fejlettek és mégsem elég jók. Kevés fihgyelmeztetés volt a nagy mennyiségű hóesésről amely megbénította az infrastruktúránkat. Korábbi és pontosabb figyelmeztetések korlátozhatják hasonló események kárát(£470m-ra értékelték fel a napi kárt csak az utazásí zavarok miatt). Ezenkívül az ilyen események jövőbeli valószínűségére vonatkozó jobb hosszú távú előrejelzések elősegíthetik a beruházásokat és az infrastruktúra és szolgáltatások tervezését: fektesenek-e be a Tanácsoknak több hókoptróba; kell-e a vasúttársaságoknak befektetniük a hálózat ellenállóbbá tételére az extrém hideg időjárással szemben; hogyan lehetne folyamatosan működtetni a sürgősségi szolgálatokat ilyen szélsőséges körülmények között stb.?
 
-## So why are our forecasts not better?
+## Tehát miért nem jobbak az előrejelzéseink??
 
-### Resolution
+### Felbontás
 
-One of the main reasons is that the resolution of the weather forecasting computer models is at the moment still quite coarse. For example the MetOffice forecasting model, which is considered amongst the best in the world, divides the UK in squares of 1.5 km at its highest resolution, i.e. the simulation produces a single averaged value anywhere within this 1.5 km x 1.5 km area. The time resolution for the shortest-term forecast is 50 seconds.
+Az egyik fő ok az, hogy az időjárás-előrejelző számítógépes modellek felbontása jelenleg még elég durva. Például a MetOffice előrejelzési modell, amelyet a világ legjobbjai között tartanak számon, 1,5 km-es négyzetekre osztja az Egyesült Királyságot a legnagyobb felbontásában, azaz a szimuláció egyetlen átlagolt értéket hoz létre bárhol ezen az 1,5 km x 1,5 km-es területen. A legrövidebb távú előrejelzés időbeli felbontása 50 másodperc.
 
-In contrast, for accurate simulation of local weather, a resolution of hundred metres and a time step of about a second are required. This would require a supercomputer a thousand times more powerful than the one currently in use by the MetOffice.
+Ezzel szemben a helyi időjárás pontos szimulációjához száz méteres felbontás és körülbelül másodperces idő lépték szükségesek. Ehhez egy ezerszer erősebb szuperszámítógépre lenne szükség, mint a jelenlegi amit a MetOffice használ.
 
-### Speed and power
+### Sebesség és teljesítmény
 
 <!--
-Computers of course get faster all the time, but about ten years ago there was a fundamental change in _how_ they got faster. This is explained very well in the famous article ["The Free Lunch Is Over"](http://www.gotw.ca/publications/concurrency-ddj.htm) by Herb Sutter, but the result was that computers became harder to program and older programs would actually run _slower_ on the newer computers.
+A számítógépek természetesen folyamatosan gyorsulnak, de körülbelül tíz évvel ezelőtt alapvető változás történt abban, _ahogyan_ gyorsabbak lettek. Ez nagyon jól el van magyarázva a híres cikkben ["The Free Lunch Is Over"](http://www.gotw.ca/publications/concurrency-ddj.htm) Herb Sutter által, de az eredmény az lett, hogy a számítógépeket nehezebb lett programozni, és a régebbi programok valójában _lassabban_ fognak futni az újabb számítógépeken.
 -->
 
- A key problem with supercomputers is that they consume _a lot_ of power. The current MetOffice supercomputer consumes 2.7 MW of electricity. A supercomputer a thousand times more powerful would need 2.7GW which is more than twice as much as all the electricity produced by the UK's largest nuclear power station, Hinkley Point B.
+ A fő probléma a szuperszámítógépekkel az, hogy _nagyon sok_ energiát fogyasztanak. A jelenlegi MetOffice szuperszámítógép 2.7 MW energiát fogyaszt. Egy ezerszer gyorsabb szuperszámítógép 2.7GW-ot igényelne, amely kétszer több energia mint amit az Egyesült Királyság legnagyobb atomeróműje állít elő, Hinkley Point B.
 
-To reduce the power consumption, new supercomputers have started using special hardware called [_accelerators_](https://www.techradar.com/news/world-of-tech/future-tech/accelerating-supercomputing-power-1223031). Already, both the [fastest](https://www.top500.org/lists/2017/11/) and [most power-efficient](https://www.top500.org/green500/lists/2017/11/) supercomputers in the world use this technology.
+Az energiafogyasztás csökkentése érdekében az új szuperszámítógépek speciális hardvert kezdenek használni névileg [_gyorsítók_](https://www.techradar.com/news/world-of-tech/future-tech/accelerating-supercomputing-power-1223031). Már a világ [leggyorsabb](https://www.top500.org/lists/2017/11/) és [energiahatékonyabb](https://www.top500.org/green500/lists/2017/11/) szuperszámítógépei is ezt a technológiát használják.
 
-### Programming challenges
+### Programozási kihívások
 
 Unfortunately writing programs for such an accelerator-based supercomputer is very complicated. And existing programs can't benefit from accelerators without major changes. Weather forecasting models are very large and complex, with around a million lines of code. Rewriting such a program is extremely difficult and time consuming.
 
