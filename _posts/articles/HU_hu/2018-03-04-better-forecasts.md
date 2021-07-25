@@ -38,18 +38,18 @@ Az energiafogyasztás csökkentése érdekében az új szuperszámítógépek sp
 
 ### Programozási kihívások
 
-Unfortunately writing programs for such an accelerator-based supercomputer is very complicated. And existing programs can't benefit from accelerators without major changes. Weather forecasting models are very large and complex, with around a million lines of code. Rewriting such a program is extremely difficult and time consuming.
+Sajnos nagyon bonyolult programokat írni egy ilyen gyorsító alapú szuperszámítógéphez. A meglévő programok pedig nagyobb változások nélkül nem élvezhetik a gyorsítókat. Az időjárás-előrejelzési modellek nagyon nagyok és összetettek, mintegy millió kódsorral. Egy ilyen program átírása rendkívül nehéz és időigényes.
 
-## So what's hindering progress?
+## Tehát mi akadályozza a haladást?
 
-The holy grail is to develop a software technology that can automatically change legacy programs to make them suitable to the new, accelerator-based supercomputers. Many research groups, [including my own](https://www.nextplatform.com/2015/05/18/fpgas-held-back-in-hpc-but-hope-on-the-horizon/), are working on such approaches.
+A szent grálnak olyan szoftvertechnológiát kell kifejlesztenie, amely automatikusan megváltoztathatja a régi programokat, hogy alkalmassá váljanak az új, gyorsító alapú szuperszámítógépekre. Számos kutatócsoport, [köztük sajátjaim](https://www.nextplatform.com/2015/05/18/fpgas-held-back-in-hpc-but-hope-on-the-horizon/) is dolgoznak ilyen megközelítéseken.
 
-There is however a huge gap between a research proof-of-concept and a ready-for-use product and it takes considerable investment to bridge this gap. Unfortunately, a funding gap exists in this area: on the one hand, creating a product from a research proof-of-concept is not core research and can therefore not be funded by the Research Councils or through EU research funding. On the other hand, as there is no perceived commercial value in such a product (because the potential marked is very small), commercial funding is not an option.
+Óriási különbség van azonban a kutatás igazolása és a használatra kész termék között, és ennek a hiányosságnak a megszüntetéséhez jelentős beruházásokra van szükség.Sajnos ezen a területen finanszírozási hiány van: egyrészt terméket létrehozni kuitatás koncepciójának igazolásából nem számít alapkutatásnak, ezért nem finanszírozható sem a Kutatási Tanácsok, sem pedig az európai uniós kutatási finanszírozás révén. Másrészt, mivel egy ilyen termékben nincs érzékelt kereskedelmi érték (mivel a megjelölt potenciál nagyon kicsi), a kereskedelmi finanszírozás sem egy opció.
 
-## Imagine
+## Képzeljék
 
-So imagine that the UK took a more joined-up view with investment to speed up the adoption of research. In the case of weather forecasting, this would help to minimize the impact on people and the economy of severe weather events like we experienced recently. It would be a thousandfold return on the investment.
+Tehát képzelje el, hogy az Egyesült Királyság a kutatás elfogadásának felgyorsítása érdekében a befektetésekkel összevontabb álláspontot képvisel. Az időjárás-előrejelzés esetében ez segítene minimalizálni az olyan súlyos időjárási események emberre és a gazdaságra gyakorolt ​​hatását, mint ahogyan azt a közelmúltban tapasztaltuk. Ez a beruházás ezerszeres megtérülése lenne.
 
 <!--
-note: For even finer-grained local simulations, which would for example take into account the effect of the buildings in a city, resolutions of a few meters and time steps of a few hundredths of a second are necessary. This would require the model to compute a million times more data points than for the hundred-metres model and thus would require a billion times more computations than for the current model.
+megjegyzés: Még finomabb részletekű helyi szimulációkhoz, amelyek például figyelembe veszik a városban lévő épületek hatását, néhány méteres felbontásra és néhány száz másodperces időbeli léptékre van szükség. Ehhez a modellnek milliószor több adatpontot kellene kiszámítania, mint a száz méteres modell esetében, és így milliárdszor több számítást igényelne, mint a jelenlegi modell.
 -->
